@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int t=1,x,i;
+    double s=0;
+        s=0;
+        scanf("%d",&x);
+        for(i=1;i<=x;i++)
+        {
+            t*=i;
+        }
+        printf("%d",t);
+     return 0;
+}
