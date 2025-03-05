@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    double eps,x;
+    scanf("%lf %lf",&x,&eps);
+    double n=1.0;
+    double i=x,sin=1.0;
+    int yy=2014;
+    printf("Nam      GDP\n");
+    printf("%d   %.2lf\n",yy,x);
+    while(i<2*x)
+    {
+       i+=eps*i;
+       yy++;
+       printf("%d   %.2lf\n",yy,i);
+    }
+    return 0;
+}
