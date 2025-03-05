@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    double eps,x;
+    scanf("%lf %lf",&x,&eps);
+    printf("%lf",x*pow((1+0.0045),eps));
+    return 0;
+}
