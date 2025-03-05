@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    double eps,x;
+    scanf("%lf %lf",&x,&eps);
+    x=x*3.14/180.0;
+    int i=0,j,k=1;
+    double n=1,sin=0,a=1;
+    do
+    {
+        for(j=1;j<2*i+1;j++)
+        {
+            k*=j;
+        }
+        n=pow(-1,i)*pow(x,2*i+1)/k;
+        sin+=n;
+        i++;
+    }
+    while(fabs(n)>eps);
+        printf("%lf",sin);
+    return 0;
+}
