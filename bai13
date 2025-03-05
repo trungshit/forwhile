@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    double eps,x;
+    scanf("%lf %lf",&x,&eps);
+    double n=1.0;
+    double sin=1.0;
+    int i=1;
+    while (fabs(n)>eps)
+    {
+        n*=x/i;
+        sin+=n;
+        i++;
+    }
+    printf("%.6lf",sin);
+    return 0;
+}
