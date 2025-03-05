@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int t,x,i,s;
+        s=0;
+        scanf("%d",&x);
+        for(i=1;i<=x/2;i++)
+        {
+            if(x%i==0)
+                s+=i;
+        }
+        s+=x;
+       if(s==x)
+        printf("la so hoan hao");
+       else
+        printf("ko la so hoan hao");
+     return 0;
+}
